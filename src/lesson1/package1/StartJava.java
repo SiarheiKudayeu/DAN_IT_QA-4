@@ -1,4 +1,4 @@
-package package1;
+package lesson1.package1;
 
 public class StartJava {
     //CTRL+ALT+L windows реформат кода
