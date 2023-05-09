@@ -9,6 +9,6 @@ public class StartJava {
         System.out.println("Hello all QA-4");
         Random random = new Random();
         System.out.println(random.nextInt(100));
-        System.out.println((int) (Math.random() * 100)-50);
+        System.out.println((int) (Math.random() * 100) - 50);
     }
 }
