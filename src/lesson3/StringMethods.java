@@ -102,23 +102,23 @@ public class StringMethods {
         //возвращает новую строку
         String cont5 = "The length of string is: 24";
         int indexO = cont5.indexOf("o");
-        System.out.println(cont5.substring(indexO+1));
+        System.out.println(cont5.substring(indexO + 1));
 
         int indexS = cont5.lastIndexOf("s");
-        System.out.println(cont5.substring(indexO,indexS+1));
+        System.out.println(cont5.substring(indexO, indexS + 1));
 
 
         //replace – возвращает строку, заменяя указанные символы или строки.
         String cont6 = "The length of string is: 24";
-        String cont7 = cont6.replace("is: 24","Twenty five");
+        String cont7 = cont6.replace("is: 24", "Twenty five");
         System.out.println(cont7);
 
         String example = "Catch up on what you missed at Team '23! Sessions are now available on demand.";
-        String resultFromExample = example.replace("! Sessions are now available on demand.","")
-                .replace("Catch up on what you missed at Team '","");
+        String resultFromExample = example.replace("! Sessions are now available on demand.", "")
+                .replace("Catch up on what you missed at Team '", "");
         String expect = "23";
-        System.out.println(example.replace("! Sessions are now available on demand.","")
-                .replace("Catch up on what you missed at Team '",""));
+        System.out.println(example.replace("! Sessions are now available on demand.", "")
+                .replace("Catch up on what you missed at Team '", ""));
         System.out.println(resultFromExample);
 
 
@@ -130,11 +130,10 @@ public class StringMethods {
         System.out.println(one);
         System.out.println(two);
         boolean d = one == two;
-        boolean f = (Integer.parseInt(resultFromExample))==(Integer.parseInt(expect));
+        boolean f = (Integer.parseInt(resultFromExample)) == (Integer.parseInt(expect));
         System.out.println(c);
         System.out.println(d);
         System.out.println(f);
-
 
 
         //split
@@ -147,12 +146,36 @@ public class StringMethods {
         String secondtWord = example2.split("t")[1];
         System.out.println(secondtWord);
 
-        System.out.println(Character.isDigit((example2.charAt(5))));
+        System.out.println("================================");
+        String digit = "123456";
+        String nonDidit = "advavdv";
+        System.out.println(Character.isDigit(digit.charAt(0)));
+        System.out.println(Character.isDigit(nonDidit.charAt(0)));
 
 
-        //
+        System.out.println("____________________________");
+
+        System.out.println(digitOrNot(digit));
+        System.out.println(digitOrNot(nonDidit));
+        System.out.println(digitOrNot("123klj242"));
+
+
+        //trim - убирает открывающие и закрывающие пробелы
+        String sa = " string ";
+        System.out.println(sa);
+        System.out.println(sa.trim());
 
 
     }
 
+    public static boolean digitOrNot(String s) {
+        boolean result = true;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (Character.isDigit(s.charAt(i)) != true) {
+                result = false;
+                break;
+            }
+        } return result;
+    }
 }

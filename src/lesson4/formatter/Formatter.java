@@ -1,4 +1,4 @@
-package lesson3;
+package lesson4.formatter;
 
 import java.util.Date;
 
@@ -25,15 +25,19 @@ public class Formatter {
         //можно указывать маркеры подстановки типа 1$ для упорядочивания вывода необходимых аргументов
         //Со строковым значением можно указывать длину контейнера в которм разместить наше строковое значение
         //Можно также ограничивать кол-во символов
+        //System.out.printf("This is format %2$s string for %1$s example","SPEC1","SPEC2");
 
         //%c символьное представление аргумента
+        /*char c = 'C';
+        System.out.printf("This is format '%c' string for example",c);*/
 
 
         //%d Для работы с целочисленными типами данных byte, int, short, long
+       // System.out.printf("This is format '%d' string for example",345);
 
 
         //%f Для работы с вещественными типами данных float, double
-        //System.out.printf("Отобразим число с плавающей точкой: %f" , 200.0546);
+        //System.out.printf("Отобразим число с плавающей точкой: %%%f\n" , 200.0546);
 
         Date date = new Date();
         System.out.println(date);
@@ -43,22 +47,22 @@ public class Formatter {
         //форматирование вывода времени
         //H - часы, M - минуты, S - секунды, L - миллисекунды , N - наносекунды.
         //p - добавляет информацию о pm и am
+//        System.out.printf("Вывeдем дату в формате: %tH\n", date);
+//        System.out.printf("Выведем дату в формате: %tM\n", date);
+//        System.out.printf("Выведем дату в формате: %tS\n", date);
+        System.out.printf("Time now is : %1$tH hours, %1$tM minutes, %1$tS seconds\n",date);
 
-        System.out.printf("Сейчас время равно %tT\n", date);
-        System.out.printf("Сейчас время равно %1$tH:%1$tM:%1$tS:%1$tL:%1$tN %1$tp", date);
+        //A - день недели, d - две цифры даты , B - месяц, m - месяц в виде цифры,
+        // Y - год, y - две фин цифры года
+        System.out.printf("date now is : %1$td, %1$tB, %1$tY\n",date);
+        System.out.printf("Time now is : %1$tT\n",date);
 
-        //A - день недели, d - две цифры дата в цифрах.
-        //B -  название месяц, ,m - месяц в виде цифры.
-        //Y - полный год, y - две финальные цифры года.
-        //System.out.printf("Выведем дату в одном формате %1$tA %1$tB %1$tY\n", date);
-        //System.out.printf("Выведем дату в другом формате %1$td:%1$tm:%1$ty\n", date);
-        System.out.printf("Выведем дату в третьем формате %1$tA %1$td %1$tB\n", date);
-        String date2 = String.format("%1$tA %1$td %1$tB", date);
-        System.out.println(date2);
+        System.out.printf("Time now is : %1$tH hours, %1$tM minutes, %1$tS %2$s\n",date, "second");
 
-        String string1 = "В кавычках %s должен быть текст.";
-        String string2 = String.format(string1, "строка");
-        System.out.println(string2);
+
+        String stringForFormat = "Time now is : %1$tH hours, %1$tM minutes, %1$tS %2$s\n";
+        String stringFinalText = String.format(stringForFormat,date,"SECOND");
+        System.out.println(stringFinalText);
 
 
     }
