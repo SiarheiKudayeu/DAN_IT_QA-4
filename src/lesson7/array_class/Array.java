@@ -128,5 +128,15 @@ public class Array {
         int[] finalArray = new int[10];
         System.arraycopy(array, 2, finalArray, 3, 4 );
         System.out.println(Arrays.toString(finalArray));
+
+        int[] arrayBinarySearch = {12, 232, 4, 54, 1, 253, 5};
+        Arrays.sort(arrayBinarySearch);
+        System.out.println(Arrays.toString(arrayBinarySearch));
+        System.out.println(Arrays.binarySearch(arrayBinarySearch,54));
+        System.out.println(Arrays.binarySearch(arrayBinarySearch,12));
+        System.out.println(Arrays.binarySearch(arrayBinarySearch,253));
+        System.out.println(Arrays.binarySearch(arrayBinarySearch,1));
+
+
     }
 }

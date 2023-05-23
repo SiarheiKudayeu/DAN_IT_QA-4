@@ -1,4 +1,4 @@
-package lesson5.foreach;
+package lesson6.lesson5.foreach;
 
 public class Foreach2 {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package lesson5.arrays;
-
-import java.util.Random;
+package lesson6.lesson5.arrays;
 
 public class General {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package lesson5.forcycle;
-
-import java.util.Scanner;
+package lesson6.lesson5.forcycle;
 
 public class Ex1 {
     public static void main(String[] args) {

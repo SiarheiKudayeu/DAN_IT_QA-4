@@ -1,7 +1,4 @@
-package lesson5.foreach;
-
-import java.util.Arrays;
-import java.util.Scanner;
+package lesson6.lesson5.foreach;
 
 public class General {
     //Цикл for each это разновидность цикла for,

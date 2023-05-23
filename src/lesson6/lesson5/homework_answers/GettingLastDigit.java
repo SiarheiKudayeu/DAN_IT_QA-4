@@ -1,4 +1,4 @@
-package lesson5.homework_answers;
+package lesson6.lesson5.homework_answers;
 
 public class GettingLastDigit {
     public static void main(String[] args) {

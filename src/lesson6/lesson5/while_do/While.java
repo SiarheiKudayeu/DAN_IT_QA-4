@@ -1,4 +1,4 @@
-package lesson5.while_do;
+package lesson6.lesson5.while_do;
 
 import java.util.Scanner;
 
