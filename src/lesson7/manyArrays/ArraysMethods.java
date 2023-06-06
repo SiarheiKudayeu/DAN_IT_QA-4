@@ -12,6 +12,16 @@ public class ArraysMethods {
         System.out.println("\n" + "Minimum value is: " + minValue);
     }
 
+    static void maxArrayValue(int[] arrayInt4) {
+        int maxValue = arrayInt4[0];
+        for (int i = 0; i < arrayInt4.length; i++) {
+            if (arrayInt4[i] > maxValue) {
+                maxValue = arrayInt4[i];
+            }
+        }
+        System.out.println("\n" + "Maximum value is: " + maxValue);
+    }
+
     static void arraysSort(int[] elements) {
         for (int i = 0; i < elements.length; i++) {
             int min;
@@ -40,6 +50,8 @@ public class ArraysMethods {
         arraysSort(array);
 
         displayArray(array);
+
+        maxArrayValue(array);
 
     }
 }

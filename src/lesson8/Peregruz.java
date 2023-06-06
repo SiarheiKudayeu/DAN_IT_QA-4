@@ -32,7 +32,7 @@ public class Peregruz {
         System.out.println("=======================");
         doSmth(3, 4, "String");
         System.out.println("=======================");
-        doSmth(3,  "String", 56);
+        doSmth(3, "String", 56);
     }
 
 }
