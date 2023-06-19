@@ -1,4 +1,4 @@
-package lesson6.lesson5;
+package lesson5;
 
 public class HomeWorkLesson5 {
     /*1)Написать программу, которая будет считывать введенные пользователем

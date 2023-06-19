@@ -1,4 +1,4 @@
-package lesson6.lesson5.while_do;
+package lesson5.while_do;
 
 public class DoWhile {
     public static void main(String[] args) {

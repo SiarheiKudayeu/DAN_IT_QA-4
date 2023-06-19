@@ -1,4 +1,4 @@
-package lesson6.lesson5.foreach;
+package lesson5.foreach;
 
 public class General {
     //Цикл for each это разновидность цикла for,

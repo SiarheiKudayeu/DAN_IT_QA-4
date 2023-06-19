@@ -1,4 +1,4 @@
-package lesson6.lesson5.forcycle;
+package lesson5.forcycle;
 
 public class General {
     public static void main(String[] args) {
